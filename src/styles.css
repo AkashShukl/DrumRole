@@ -1,0 +1,59 @@
+body {
+  background-color: black;
+}
+
+#app {
+  padding-top: 20%;
+}
+.drumBtn {
+  height: 50px;
+  min-width: 50px;
+  border: 2px solid rgb(202, 192, 192);
+  color: white;
+  transition: all 0.07s ease;
+  text-align: center;
+  padding: 10px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.drumroll {
+  background-image: url("https://t4.ftcdn.net/jpg/04/97/97/15/360_F_497971583_BeWR42eKPHy3FOgoYoQwyHqhM58OTfKh.jpg");
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.playing {
+  border: 12px solid rgb(243, 158, 61);
+  color: red;
+  transform: scale(1.2);
+  box-shadow: blueviolet;
+}
+
+.drumBtnAlphabet {
+  font-size: 18px;
+}
+.drumBtnName {
+  bottom: 0;
+  font-size: 11px;
+  text-transform: capitalize;
+}
+
+@media only screen and (max-width: 600px) {
+  .drumroll {
+    background-image: none;
+    /* background-image: url("https://t4.ftcdn.net/jpg/04/97/97/15/360_F_497971583_BeWR42eKPHy3FOgoYoQwyHqhM58OTfKh.jpg"); */
+    height: 80vh;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+}
